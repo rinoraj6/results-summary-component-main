@@ -1,0 +1,300 @@
+:root{
+    --lightRed: hsl(0, 100%, 67%);
+    --orangeyYellow: hsl(39, 100%, 56%);
+    --greenTeal: hsl(166, 100%, 37%);
+    --cobaltBlue: hsl(234, 85%, 45%);
+
+    --lightSlateBlue :hsl(252, 100%, 67%);
+    --lightRoyalBlue: hsl(241, 81%, 54%);
+
+    --violetBlue: hsla(256, 72%, 46%, 1);
+    --persianBlue : hsla(241, 72%, 46%, 0);
+
+    --white: hsl(0, 0%, 100%);
+    --paleBlue: hsl(221, 100%, 96%);
+    --lightLavender: hsl(241, 100%, 89%);
+    --darkgrayBlue: hsl(224, 30%, 27%);
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    line-height: 1rem;
+    /* fontweight: 500 700 800 */
+    background-color: var(--white)
+}
+
+section{
+    /* border: 1px solid red; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    /* border: 2px solid rgb(13, 1, 1); */
+    width: 100%;
+    max-width: 580px;
+    min-height: 380px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: rgba(18, 18, 211, 0.2) 0px 7px 29px 0px;
+    
+}
+.box{
+    width: 50%;
+}
+.box:first-child{
+    /* border: 2px solid red; */
+    padding-top: 1.5rem;
+    
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    /* gradient */
+
+    background: -webkit-linear-gradient(120deg, #6441fd,#4534f2);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(120deg, #6441fd,#4534f2);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+
+    /* gradient */
+
+}
+.head{
+    color: var(--lightLavender);
+    font-weight: 700;
+}
+.circle{
+
+    /* gradient */
+
+    background: hsla(254, 70%, 46%, 1);
+
+    background: linear-gradient(270deg, hsla(254, 70%, 46%, 1) 43%, hsla(246, 82%, 56%, 1) 93%);
+
+    background: -moz-linear-gradient(270deg, hsla(254, 70%, 46%, 1) 43%, hsla(246, 82%, 56%, 1) 93%);
+
+    background: -webkit-linear-gradient(270deg, hsla(254, 70%, 46%, 1) 43%, hsla(246, 82%, 56%, 1) 93%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4B23CA", endColorstr="#4533EB", GradientType=1 );
+    /* gradient */
+
+    /* border: 1px solid black; */
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 1rem;
+}
+.circle h2{
+    margin-top: 1.6rem;
+    color: var(--white);
+    font-weight: 800;
+    font-size: 3rem;
+    align-self: center;
+}
+.circle p{
+    color: var(--lightSlateBlue );
+    font-weight: 500;
+    font-size: 1rem;
+    display: block;
+    /* margin-top: 2rem; */
+}
+.performance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.performance p:first-child  {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.8rem
+}
+.performance p:last-child{
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    line-height: 1.4;
+    color:var(--paleBlue);
+    text-align: center;
+    letter-spacing: .8px;
+    font-weight: 500;
+}
+
+
+
+.box:last-child{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.summary{
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+.test-box{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7rem 1rem;
+    border-radius: 8px;
+}
+
+#top-mar{
+    margin-top: .7rem;
+}
+.icon-box{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.test-score{
+    
+    font-weight: 700;
+}
+.test-score :first-child {
+    color: hsla(224, 30%, 27%,100%);
+}
+.test-score:last-child{
+    color: hsl(240, 21%, 65%);
+}
+
+
+
+
+
+.btn-class{
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 1rem;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 10rem; 
+    margin-top: .5rem;   
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-class:hover{
+    transition: .2s ease;
+    background-color: hsl(234, 85%, 45%);
+}
+
+/* colors class */
+    .reaction-color{
+        color: var(--lightRed);
+        font-weight: 500;
+        
+    }
+    .memory-color{
+        color: var(--orangeyYellow);
+        font-weight: 500;
+    }
+    .verbal-color{
+        color: var(--greenTeal);
+        font-weight: 500;
+    }
+    .visual-color{
+        color: var(--cobaltBlue);
+        font-weight: 500;
+        /* font-size: 1rem; */
+    }
+    .gray{
+        color: hsl(240, 21%, 65%);
+    }   
+
+
+    .reaction-box{
+        background-color: hsla(0, 100%, 67%,7%);
+    }
+    .memory-box{
+        background-color: hsla(39, 100%, 56%,8%);
+    }
+    .verbal-box{
+        background-color: hsla(166, 100%, 37%,7%);
+    }
+    .visual-box{
+        background-color: hsla(234, 85%, 45%,7%)
+    }
+
+
+/* colors class */
+
+
+.dyna{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.container-box{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem .6rem;
+    border-radius: .6rem;
+
+}
+.ib1{
+    /* border: 1px solid rgb(8, 0, 255); */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+/* .ib2{
+    border: 1px solid rgb(0, 255, 60);
+    
+} */
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (max-width:820px)  
+    {
+        
+        .container{
+            height: 100vh;
+            display:block;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;     
+            /* background-color: red; */
+        } 
+        .box:first-child, .box:last-child{
+            width: 100%;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+        }
+       
+        
+}
+
+
+    /* @media screen and (min-width:620px) {
+        .container{
+            display: flex;
+            justify-content:  center;
+            align-items: center;
+        }
+    } */
+
