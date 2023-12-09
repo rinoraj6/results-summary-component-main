@@ -29,7 +29,7 @@ body{
 
 section{
     /* border: 1px solid red; */
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,12 +38,12 @@ section{
     /* border: 2px solid rgb(13, 1, 1); */
     width: 100%;
     max-width: 580px;
-    /* min-height: 380px; */
+    /* min-height: auto; */
     display: flex;
     justify-content: space-evenly;
     border-radius: 10px;
     overflow: hidden;
-    background-color: white;
+    background-color: var(--white);
     box-shadow: rgba(18, 18, 211, 0.2) 0px 7px 29px 0px;
     
 }
@@ -124,7 +124,7 @@ section{
 .performance p:last-child{
     margin-top: 1rem;
     padding: 1rem 2rem;
-    line-height: 1.4;
+    line-height: 1.2;
     color:hsla(221, 100%, 96%,80%);
     text-align: center;
     letter-spacing: .8px;
@@ -183,7 +183,7 @@ section{
     padding: 1rem;
     background-color: hsl(224, 30%, 27%);
     border-radius: 10rem; 
-    margin-top: .5rem;   
+    margin-top: 1rem;   
 }
 a{
     text-decoration: none;
@@ -283,7 +283,7 @@ a{
     {
         
         .container{
-            height: 100vh;
+            min-height: 100vh;
             display:block;
             border-top-right-radius: 0px;
             border-top-left-radius: 0px;     
