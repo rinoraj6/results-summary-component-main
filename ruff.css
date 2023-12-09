@@ -87,8 +87,8 @@ section{
     /* gradient */
 
     /* border: 1px solid black; */
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -105,10 +105,10 @@ section{
 }
 .circle p{
     color: var(--lightSlateBlue );
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: .9rem;
     display: block;
-    /* margin-top: 2rem; */
+    margin-top: .6rem;
 }
 .performance{
     display: flex;
@@ -125,10 +125,11 @@ section{
     margin-top: 1rem;
     padding: 1rem 2rem;
     line-height: 1.4;
-    color:var(--paleBlue);
+    color:hsla(221, 100%, 96%,80%);
     text-align: center;
     letter-spacing: .8px;
     font-weight: 500;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -189,9 +190,11 @@ a{
     color: white;
 }
 
+/* sd; */
 .btn-class:hover{
     transition: .2s ease;
-    background-color: hsl(234, 85%, 45%);
+    /* background-color: hsl(234, 85%, 45%); */
+    background: linear-gradient(176deg, rgba(120, 87, 255, 1) 0%, rgba(46, 43, 233, 1) 100%);
 }
 
 /* colors class */
@@ -215,20 +218,25 @@ a{
     }
     .gray{
         color: hsl(240, 21%, 65%);
+        font-weight: 700;    
     }   
 
 
     .reaction-box{
         background-color: hsla(0, 100%, 67%,7%);
+        color: hsl(0, 100%, 67%)
     }
     .memory-box{
         background-color: hsla(39, 100%, 56%,8%);
+        color: hsl(39, 100%, 56%);
     }
     .verbal-box{
         background-color: hsla(166, 100%, 37%,7%);
+        color: hsl(166, 100%, 37%);
     }
     .visual-box{
-        background-color: hsla(234, 85%, 45%,7%)
+        background-color: hsla(234, 85%, 45%,7%);
+        color: hsl(234, 85%, 45%);
     }
 
 
@@ -246,7 +254,7 @@ a{
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
-    padding: .8rem .6rem;
+    padding: .8rem .8rem;
     border-radius: .6rem;
 
 }
@@ -254,12 +262,13 @@ a{
     /* border: 1px solid rgb(8, 0, 255); */
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: .9rem;
 }
-/* .ib2{
-    border: 1px solid rgb(0, 255, 60);
+.ib2 :first-child{
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
     
-} */
+}
 
 
 

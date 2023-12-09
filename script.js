@@ -64,7 +64,7 @@ const m = document.querySelectorAll('.container-box');
 n.forEach((num1, index) => {
     const num2 = m[index];
     num2.classList.add(num1);
-    console.log(num2.classList);
+    // console.log(num2.classList);
 });
 
 
